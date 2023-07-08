@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+body{
+    display: flex;
+    justify-content: center;
+    
+}
+.container{
+
+    width: 400px;
+    height: 100px;
+    margin-top: 270px;
+   
+}
+
+i{
+    width: 40px;
+    height: 40px;
+}
+
+
+input[type="text"]{
+
+
+    font-family: 'Montserrat', sans-serif;
+    box-shadow:  rgb(0,0,0,0.35) 0px 5px 15px;
+    text-align: center;
+    font-size: large;
+    height: 50px;
+    width: 260px;
+    border: none;
+    border-radius: 20px;
+    margin-inline: 10px;
+    outline:  none;
+}
+.search{
+   
+   
+    display: flex;
+    margin: auto;
+    margin-top: 20px;
+    justify-content: baseline;
+    
+    
+}
+.weather{
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 20px;
+}
+.temp{
+    font-family: 'Montserrat', sans-serif;
+}
+.detail{
+    display: flex;
+    flex-direction: row;
+    
+    margin: auto;
+    font-family: 'Montserrat', sans-serif;
+   
+}
+.detail1{
+   
+    padding-inline: 50px;
+    
+}
+button{
+    background-color: black;
+}
+button{
+
+    width: 50px;
+    height: 50px;
+    margin: auto;
+
+    font-size: large;
+    font-weight: bold;
+   
+    background-color: black;
+    border: 1px solid black;
+    color: black;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+button:hover{
+    background-color: #242424;
+    color: white;
+
+   }
+
+.wrapper{
+    position: relative;
+    overflow-x: hidden;
+}
+.menu {
+    position: fixed;
+    left: 0;top: 0;
+    
+    transition: 1s;
+    margin-top: 270px;
+    transform: translate(-100%);
+    flex-direction: column;
+    width: 400px;
+    height: auto;
+    background-color: white;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow:  rgb(0,0,0,0.35) 0px 5px 15px;
+}
+
+@keyframes slideIn {
+    0% {
+      left: -20%;  
+    }
+    50% {
+      left: 20%; top: -30%;
+    }
+    100% {
+      left: 27%;
+    }
+  }
+  
+  
+  .menu_active {
+    animation: slideIn 3s forwards;
+  }
+  
+
+.q1 {
+    position: fixed;
+    bottom: -100%;
+    left: auto;
+    width: 600px;
+    height: auto;
+    background-color: #ffffff;
+    padding: 5px;
+    transition: bottom 0.7s ease;
+    border-radius: 20px;
+    box-shadow:  rgb(0,0,0,0.35) 0px 5px 15px;
+  }
+  
+  .q1.active {
+    bottom: 30px;
+    
+  }
+  
+  .modal__main {
+    margin: 0;
+  }
+  .modal__main button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 14px;
+  }

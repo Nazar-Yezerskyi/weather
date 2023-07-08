@@ -1,0 +1,49 @@
+
+.container{
+    width: 250px;
+    height: 370px;
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.search_box{
+    width: 250px;
+    height: 50px;
+    background-color: aqua;
+    display: flex;
+    flex-direction: row;
+}
+.img-small{
+    width: 50px;
+    height: 50px;
+    padding-inline: 10px;
+}
+.img-small1{
+    width: 50px;
+    height: 50px;
+  
+}
+
+input{
+    width: 150px;
+}
+button{
+    width: 50px;
+}
+.weather{
+    justify-content: center;
+}
+.details{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    
+}
+.col{
+    display: flex;
+    flex-direction: column;
+  
+    padding-inline: 25px;
+}
