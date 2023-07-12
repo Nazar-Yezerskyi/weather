@@ -3,10 +3,32 @@ function initialize() {
   const apiUrl = 'https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/';
   const searchInput = document.querySelector('.search input');
   const searchButton = document.querySelector('.search button');
-  const weatherIcon = document.querySelector('.weather-icon i');
   const menu = document.querySelector('.menu');
   const modal = document.querySelector('.q1');
   const buttonElem = document.querySelector('.modal__main button');
+  const html = `
+        <div class="menu">
+            <div class="weather">
+                <div class="weather-icon">
+                    <i class="fa-regular fa-sun fa-3x"></i>
+                </div>
+                <h1 class="temp">22 &#8451;</h1>
+                <h1 class="city">Lviv</h1>
+            </div>
+            <div class="detail">
+                <div class="details">
+                    <i class="fa-regular fa-droplet fa-3x"></i>
+                    <h1 class="humidity">50%</h1>
+                </div>
+                <div class="details">
+                    <i class="fa-regular fa-wind fa-3x"></i>
+                    <h1 class="wind">23 km/h</h1>
+                </div>
+            </div>
+        </div>
+  `;
+   menu.innerHTML = html;
+   const weatherIcon = document.querySelector('.weather-icon i');
 
   function checkWeather(city) {
     fetch(apiUrl + city + '?key=DJN72HVKMNSNA7T9XK7F4FT9E')
